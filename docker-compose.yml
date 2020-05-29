@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  mysqlsrv:
+  mysql57srv:
     image: mysql:5.7
     environment:
       MYSQL_ROOT_PASSWORD: "mestre"
@@ -11,8 +11,8 @@ services:
       - $PWD/data:/var/lib/mysql
       - $PWD/conf:/etc/mysql/mysql.conf.d
     networks:
-      - mysql-common-network
+      - jira-common-network
 
 networks: 
-  mysql-common-network:
+  jira-common-network:
     driver: bridge
