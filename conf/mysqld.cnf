@@ -41,3 +41,4 @@ innodb_default_row_format=DYNAMIC
 innodb_large_prefix=ON
 innodb_file_format=Barracuda
 innodb_log_file_size=2G
+transaction-isolation=READ-COMMITTED
