@@ -1,14 +1,14 @@
 version: '3'
 
 services:
-  mysql57srv:
+  mysql57:
     image: mysql:5.7
     environment:
       MYSQL_ROOT_PASSWORD: "mestre"
     ports:
-      - "3306:3306"
+      - "3307:3306"
     volumes:
-      - $PWD/data:/var/lib/mysql
+      - $PWD/data_56:/var/lib/mysql
       - $PWD/conf:/etc/mysql/mysql.conf.d
     networks:
       - jira-common-network
